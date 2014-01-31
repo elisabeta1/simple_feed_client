@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://feed:simple@localhost:3000/api/feeds/feed/items.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - '*/*; q=0.5, application/xml'
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Link:
+      - <http://localhost:3000/api/feeds/feed/items?page=1>; rel="next", <http://localhost:3000/api/feeds/feed/items?page=1>;
+        rel="last"
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Ua-Compatible:
+      - IE=Edge
+      Etag:
+      - '"6f233667c7c29c5bcf8d76e623727ab8"'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 56db39893a34abfea2737a27362cb0d8
+      X-Runtime:
+      - '0.153357'
+      Server:
+      - WEBrick/1.3.1 (Ruby/1.9.3/2013-06-27)
+      Date:
+      - Fri, 31 Jan 2014 11:11:54 GMT
+      Content-Length:
+      - '834'
+      Connection:
+      - Keep-Alive
+      Set-Cookie:
+      - _simple_feed_session=BAh7CDoScmV0dXJuX3RvX3VybDA6DHVzZXJfaWRpCEkiD3Nlc3Npb25faWQGOgZFRkkiJTAxMDAzNWYyMjk5NmM5N2JmZjljMzI4ZGQ4MDk0M2IzBjsHVA%3D%3D--12fa6e2fc83e6205e5162c0f7e242b143479693e;
+        path=/; HttpOnly
+    body:
+      encoding: UTF-8
+      string: '[{"type":"ImageItem","image_url":"http://upload.wikimedia.org/wikipedia/commons/2/22/Turkish_Van_Cat.jpg","text":"Beautiful
+        white cat!!","id":44,"created_at":"2014-01-30T16:51:36Z","link":"http://localhost:3000/api/feeds/feed/items/44.json","feed":{"link":"http://localhost:3000/api/feeds/feed.json","name":"feed"},"user":{"username":"feed","email":"elisabeta.kadilli@surfdome.com","gravatar":"http://www.gravatar.com/avatar/04f4fb70f46263999a47b55d0eab32d2?s=40"}},{"type":"TextItem","text":"First
+        feed","id":43,"created_at":"2014-01-30T16:49:34Z","link":"http://localhost:3000/api/feeds/feed/items/43.json","feed":{"link":"http://localhost:3000/api/feeds/feed.json","name":"feed"},"user":{"username":"feed","email":"elisabeta.kadilli@surfdome.com","gravatar":"http://www.gravatar.com/avatar/04f4fb70f46263999a47b55d0eab32d2?s=40"}}]'
+    http_version: 
+  recorded_at: Fri, 31 Jan 2014 11:11:54 GMT
+recorded_with: VCR 2.8.0
