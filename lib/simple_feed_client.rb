@@ -1,4 +1,4 @@
-require 'rest_client'
+require 'rest-client'
 require 'json'
 require 'simple_feed_client/item'
 require 'simple_feed_client/feed'
